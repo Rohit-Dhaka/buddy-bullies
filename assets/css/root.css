@@ -27,8 +27,12 @@
     --line-height-86: 86px;
 
     --white: white;
+    --blue: #001D49;
         
 
+}
+.color-blue{
+    color: var(--blue);
 }
 .line-height-19{
     line-height: var(--line-height-19);
