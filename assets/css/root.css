@@ -28,8 +28,12 @@
 
     --white: white;
     --blue: #001D49;
+    --bg-color:#000A1A;
         
 
+}
+.bg-color{
+    background-color: var(--bg-color);
 }
 .color-blue{
     color: var(--blue);

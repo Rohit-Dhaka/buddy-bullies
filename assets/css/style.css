@@ -21,6 +21,9 @@
 
 
 /* ------------------------------------------padding */
+.pt-21{
+    padding-top: 21px;
+}
 .pt-26{
     padding-top: 26px;
 }
@@ -30,8 +33,14 @@
 .pt-261{
     padding-top: 261px;
 }
+.pb-10{
+    padding-bottom: 10px;
+}
 .pb-46{
     padding-bottom: 46px;
+}
+.pb-63{
+    padding-bottom: 63px;
 }
 /* ------------------------------------------padding */
 /* ------------------------------------------gap */
@@ -88,6 +97,15 @@
     color: var(--white);
     background-color: transparent !important;
 
+}
+.btn-2{
+    padding: 10px 20px;
+    border-radius: 45px;
+    border: 1px solid var(--white);
+}
+.btn-2:hover{
+    background: transparent;
+    color: white;
 }
 
 .cursor-pointer {
