@@ -48,6 +48,12 @@
 .pb-10{
     padding-bottom: 10px;
 }
+.pb-34{
+    padding-bottom: 34px !important;
+}
+.pb-78{
+    padding-bottom: 78px !important;
+}
 
 .pb-46{
     padding-bottom: 46px;
@@ -144,10 +150,18 @@
 .card{
     border-radius: 20px;
     background-color: var(--card-bg);
-    padding: 39px 39px 34px 40px;
+    padding: 39px 39px 0 40px;
     /* min-height: 511px; */
 }
 
+
+.Ellipse3{
+    right: 0;
+}
+.Ellipse1{
+    
+    top: -20%;
+}
 
 
 
