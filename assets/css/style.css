@@ -21,6 +21,9 @@
 
 
 /* ------------------------------------------padding */
+.pt-11{
+    padding-top: 11px;
+}
 .pt-21{
     padding-top: 21px;
 }
@@ -42,6 +45,9 @@
 .pt-52{
     padding-top: 52px;
 }
+.pt-131{
+    padding-top: 131px;
+}
 .pt-261{
     padding-top: 261px;
 }
@@ -61,6 +67,8 @@
 .pb-63{
     padding-bottom: 63px;
 }
+
+
 .pb-127{
     padding-bottom: 127px;
 }
@@ -77,6 +85,7 @@
 .w-117{
     width: 117px;
 }
+
 .max-w-547{
     max-width: 547px;
 }
@@ -86,6 +95,72 @@
 /* ------------------------------------------width */
 /* ------------------------------------------margin */
 /* ------------------------------------------margin */
+/* ------------------------------------------timeline */
+.main-timeline-2::after {
+    content: "";
+    background-image: url(./assets/img/Line3.png);
+    position: absolute;
+    width: 3px;                
+    top: 0;
+    bottom: 17%;
+    left: 50%;
+    margin-left: -3px;
+}    
+.timeline-2 {        
+    background-color: inherit;
+    width: 50%;
+}    
+.timeline-2::after {
+    content: "";
+    position: absolute;
+    width: 43px;
+    height: 43px;
+    outline: 11px solid #001931;
+    right: -21px;
+    background-color: #009DFF;
+    border: 3px solid white;
+    top: 0;
+    border-radius: 50%;
+    z-index: 1;
+}    
+.left-2 {        
+    padding: 0 65px 0 0;        
+    left: 0;      
+}    
+.right-2 {
+    padding: 0px 0px 0px 64px;
+    
+    left: 50%;
+}    
+
+.right-2::after {
+    left: -22px;        
+}    
+@media  (max-width: 768px) {        
+    .main-timeline-2::after {
+        left: 39px;
+    }        
+    .timeline-2 {
+        width: 100%;
+        padding-left: 70px;            
+        padding-right: 25px;
+    }        
+    .left-2::after,
+    .right-2::after {
+        left: 18px;            
+    }
+    .left-2::before {
+        right: auto;
+    }        
+    .right-2 {            
+        left: 0%;
+        padding: 0px 0px 0px 90px;            
+    }
+    .left-2{
+        padding: 0 0 0 90px;     
+    }
+}
+/* ------------------------------------------timeline */
 
 
 .bg-img{
@@ -276,7 +351,17 @@
 
 @media (min-width: 575px) {}
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    .pb-md-146{
+        padding-bottom: 146px !important;
+    }
+    .pb-md-212{
+        padding-bottom: 212px !important;
+    }
+    .max-w-md-404{
+        max-width: 404px;
+    }
+}
 
 @media (min-width: 992px) {}
 

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/css/style.css">    
+</head>
+<style>        
+    .main-timeline-2::after {
+        content: "";
+        background-image: url(./assets/img/Line3.png);
+        position: absolute;
+        width: 3px;                
+        top: 0;
+        bottom: 17%;
+        left: 50%;
+        margin-left: -3px;
+    }    
+    .timeline-2 {        
+        background-color: inherit;
+        width: 50%;
+    }    
+    .timeline-2::after {
+        content: "";
+        position: absolute;
+        width: 43px;
+        height: 43px;
+        outline: 11px solid #001931;
+        right: -21px;
+        background-color: #009DFF;
+        border: 3px solid white;
+        top: 0;
+        border-radius: 50%;
+        z-index: 1;
+    }    
+    .left-2 {        
+        padding: 0 65px 0 0;        
+        left: 0;      
+    }    
+    .right-2 {
+        padding: 0px 0px 0px 64px;
+        
+        left: 50%;
+    }    
+
+    .right-2::after {
+        left: -22px;        
+    }    
+    @media  (max-width: 768px) {        
+        .main-timeline-2::after {
+            left: 39px;
+        }        
+        .timeline-2 {
+            width: 100%;
+            padding-left: 70px;            
+            padding-right: 25px;
+        }        
+        .left-2::after,
+        .right-2::after {
+            left: 18px;            
+        }
+        .left-2::before {
+            right: auto;
+        }        
+        .right-2 {            
+            left: 0%;
+            padding: 0px 0px 0px 90px;            
+        }
+        .left-2{
+            padding: 0 0 0 90px;     
+        }
+    }
+</style>
+
+<body>
+    <section class="bg-color">
+        <div class="container max-w-1326">
+            <div class="main-timeline-2 position-relative">              
+                <div class="timeline-2 right-2 pb-md-146 position-relative pb-5">
+                    <div class="timeline-card max-w-md-404 ">
+                        <h4 class="font-poppins text-white line-height-45 fs-4xl fw-semibold m-0">Q-4, 2021</h4>
+                        <h5 class="font-poppins m-0 line-height-29 fw-normal fs-md text-white pt-4 opacity-7">Blandit sed penatibus elit tortor fermentum velit donec. Id eleifend volutpat dolor netus auctor at. Volutpat sed auctor non in commodo, felis viverra risus tristique.</h5>                                               
+                    </div>
+                </div>
+                <div class="timeline-2 left-2 pb-md-212 d-md-flex justify-content-md-end position-relative pb-5">
+                    <div class="timeline-card max-w-md-404  text-md-end ">
+                        <h4 class="font-poppins text-white line-height-45 fs-4xl fw-semibold m-0">Q-1, 2021</h4>
+                        <h5 class="font-poppins m-0 line-height-29 fw-normal fs-md text-white pt-4 opacity-7">Blandit sed penatibus elit tortor fermentum velit donec. Id eleifend volutpat dolor netus auctor at. Volutpat sed auctor non in commodo, felis viverra risus tristique.</h5>                                               
+                    </div>
+                 
+                </div>
+                <div class="timeline-2 right-2 position-relative">
+                    <div class="timeline-card max-w-md-404 ">
+                        <h4 class="font-poppins text-white line-height-45 fs-4xl fw-semibold m-0">Q-2, 2021</h4>
+                        <h5 class="font-poppins m-0 line-height-29 fw-normal fs-md text-white pt-4 opacity-7">Blandit sed penatibus elit tortor fermentum velit donec. Id eleifend volutpat dolor netus auctor at. Volutpat sed auctor non in commodo, felis viverra risus tristique.</h5>                                               
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
