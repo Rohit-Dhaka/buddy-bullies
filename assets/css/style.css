@@ -320,7 +320,7 @@
     
 }
 .card:hover img{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 
@@ -354,8 +354,7 @@
 
 
 #myBtn {
-    display: none;
-    position: fixed;
+    display: none;    
     bottom: 20px;
     right: 30px;
     z-index: 99;
