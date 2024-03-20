@@ -51,42 +51,29 @@
 .pt-47{
     padding-top: 47px;
 }
-.pt-52{
-    padding-top: 52px;
+
+.pt-60{
+    padding-top: 60px;
 }
-.pt-106{
-    padding-top: 106px;
-}
-.pt-110{
-    padding-top: 110px;
-}
-.pt-121{
-    padding-top: 121px;
-}
+
+
+
 .pb-56{
     padding-bottom: 56px;
 }
-.pt-131{
-    padding-top: 131px;
-}
-.pt-141{
-    padding-top: 141px;
-}
+
+
 .pt-261{
     padding-top: 261px;
 }
-.pt-179{
-    padding-top: 179px;
-}
+
 .pb-10{
     padding-bottom: 10px;
 }
 .pb-34{
     padding-bottom: 34px !important;
 }
-.pb-78{
-    padding-bottom: 78px !important;
-}
+
 .pb-42{
     padding-bottom: 42px;
 }
@@ -94,16 +81,12 @@
 .pb-46{
     padding-bottom: 46px;
 }
-.pb-63{
-    padding-bottom: 63px;
-}
+
 .px-30{
     padding: 0 30px !important;
 }
 
-.pb-127{
-    padding-bottom: 127px;
-}
+
 /* ------------------------------------------padding */
 /* ------------------------------------------gap */
 .gap-6{
@@ -150,9 +133,7 @@
 .mb-26{
     margin-bottom: 26px !important;
 }
-.mt-63{
-    margin-top: 63px;
-}
+
 /* ------------------------------------------margin */
 /* ------------------------------------------timeline */
 .main-timeline-2::after {
@@ -174,10 +155,10 @@
     position: absolute;
     width: 43px;
     height: 43px;
-    outline: 11px solid #001931;
+    outline: 11px solid var(--outline-color);
     right: -21px;
-    background-color: #009DFF;
-    border: 3px solid white;
+    background-color: var(--sky);
+    border: 3px solid var(--white);
     top: 0;
     border-radius: 50%;
     z-index: 1;
@@ -235,7 +216,7 @@
      color: var(--black);
  }
  .accordion-button{
-     background: #031227;
+     background: var(--card-bg);
      padding: 20px 32px !important;
      border-radius: 200px;
      box-shadow: 0px 0px;
@@ -245,7 +226,7 @@
      border: 0px;         
  }
  .accordion-button:not(.collapsed) {
-    background: #031227;
+    background: var(--card-bg);
     
     
 }
@@ -293,9 +274,10 @@
 
 
 
+
 .btn-1 {
     padding: 16px 41px 15px 40px;
-    border: 1px solid white;
+    border: 1px solid var(--white);
     border-radius: 45px;
 }
 
@@ -312,7 +294,7 @@
 }
 .btn-2:hover{
     background: transparent;
-    color: white;
+    color: var(--white);
 }
 
 .cursor-pointer {
@@ -330,11 +312,10 @@
 .card{
     border-radius: 20px;
     background-color: var(--card-bg);
-    padding: 39px 39px 0 40px;
-    /* min-height: 511px; */
+    padding: 39px 39px 0 40px;    
 }
 .card:hover{
-    box-shadow: 0px 0px 20px 1px white;
+    box-shadow: 0px 0px 20px 1px var(--white);
     
 }
 
@@ -388,8 +369,7 @@
 
 
 
-/* --------------------------------------Navbar */
-
+/* --------------------------------------Navbar */    
 .hamburger {
     display: none;
 }
@@ -402,7 +382,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: black;
+        
+        backdrop-filter: blur(50px);
         width: 100%;
         height: 100vh;
         gap: 32px;
@@ -414,6 +395,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+        gap: 40px;
     }
 
     .menulist.nav-active {
@@ -451,9 +433,20 @@
 }
 /* --------------------------------------Navbar */
 
-@media (max-width: 575px) {}
+@media (max-width: 575px) {
+    .card{                
+        padding: 20px;   
+    }
+}
 
-@media (min-width: 575px) {}
+@media (min-width: 575px) {
+    .pb-sm-60{
+        padding-bottom: 60px !important;
+    }
+    .pt-sm-60{
+        padding-top: 60px !important;
+    }
+}
 
 @media (min-width: 768px) {
     .pb-md-146{
@@ -465,9 +458,46 @@
     .max-w-md-404{
         max-width: 404px;
     }
+    .mt-md-63{
+        margin-top: 63px;
+    }
 }
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+    .pb-lg-78{
+        padding-bottom: 78px !important;
+    }
+    .pb-lg-127{
+        padding-bottom: 127px;
+    }
+    .pt-lg-131{
+        padding-top: 131px !important;
+    }
+    .pt-lg-141{
+        padding-top: 141px !important;
+    }
+    .pt-lg-110{
+        padding-top: 110px !important;
+    }
+    .pt-lg-121{
+        padding-top: 121px !important;
+    }
+    .pt-lg-179{
+        padding-top: 179px !important;
+    }
+    .pt-lg-106{
+        padding-top: 106px !important;
+    }
+    .pt-lg-21{
+        padding-top: 21px !important;
+    }
+    .pb-lg-63{
+        padding-bottom: 63px !important;
+    }
+    .pt-lg-52{
+        padding-top: 52px !important;
+    }
+}
 
 @media (max-width: 1200px) {}
 
