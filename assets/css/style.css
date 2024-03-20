@@ -45,8 +45,12 @@
 .pt-52{
     padding-top: 52px;
 }
+
 .pt-131{
     padding-top: 131px;
+}
+.pt-141{
+    padding-top: 141px;
 }
 .pt-261{
     padding-top: 261px;
@@ -89,16 +93,22 @@
 .max-w-547{
     max-width: 547px;
 }
+.max-w-786{
+    max-width: 786px;
+}
 .max-w-1326{
     max-width: 1326px;
 }
 /* ------------------------------------------width */
 /* ------------------------------------------margin */
+.mt-63{
+    margin-top: 63px;
+}
 /* ------------------------------------------margin */
 /* ------------------------------------------timeline */
 .main-timeline-2::after {
     content: "";
-    background-image: url(./assets/img/Line3.png);
+    background-image: url(../img/Line3.png);
     position: absolute;
     width: 3px;                
     top: 0;
