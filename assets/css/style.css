@@ -369,7 +369,7 @@
 .underline::after {
     position: absolute;
     content: '';
-    height: 1px;
+    height: 2px;
     width: 0;
     display: inline-block;
     bottom: -2px;
@@ -377,7 +377,7 @@
     margin: 0 auto;
     left: 0;
     transition: all 300ms linear;
-    background-color: var(--gray);
+    background-color: var(--white);
 }
 
 .underline:hover::after {
