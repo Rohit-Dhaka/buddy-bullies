@@ -5,7 +5,7 @@
     scroll-behavior: smooth;
     margin: 0;
     list-style: none !important;
-    text-decoration: none !important;
+    text-decoration: none !important;    
     box-sizing: border-box;
 }
 /* ------------------------------------------font-family */
@@ -55,16 +55,16 @@
 .pt-60{
     padding-top: 60px;
 }
-
+.pb-40{
+    padding-bottom: 40px;
+}
 
 
 .pb-56{
     padding-bottom: 56px;
 }
-
-
-.pt-261{
-    padding-top: 261px;
+.pb-31{
+    padding-bottom: 31px;
 }
 
 .pb-10{
@@ -142,8 +142,7 @@
     position: absolute;
     width: 3px;                
     top: 0;
-    bottom: 17%;
-    z-index: 1;
+    bottom: 17%;    
     left: 50%;
     margin-left: -3px;
 }    
@@ -153,6 +152,7 @@
 }    
 .timeline-2::after {
     content: "";
+    
     position: absolute;
     width: 43px;
     height: 43px;
@@ -319,29 +319,33 @@
     box-shadow: 0px 0px 20px 1px var(--white);
     
 }
+.card:hover img{
+    transform: scale(1.2);
+}
 
 
-.Ellipse3{
-    background: red;
+.Ellipse3{    
 
     right: 0;
 }
 .Ellipse1{
     
-    top: -20%;
-    background: red;
+    top: -20%;    
 
 }
 .Ellipse2{
     right: 0;
-    top: -40%;
-    background: red;
+    top: -40%;    
 
 }
 .Ellipse4{
     left: 0;
-    top: -20%;
-    background: red;
+    
+}
+.bg-linear{
+    background-image: linear-gradient(180deg, rgba(0, 10, 26, 0) 0%, var(--liner-color) 100%);                      
+    bottom: 0;
+    height: 230px;    
 }
 
 
@@ -349,8 +353,21 @@
 
 
 
-
-
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: var(--card-bg);
+    color: var(--white);
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
 
 
 
@@ -386,6 +403,10 @@
 
 
 /* --------------------------------------Navbar */    
+.navbar{
+    left: 12px;
+    right: 12px;
+}
 .hamburger {
     display: none;
 }
@@ -453,6 +474,11 @@
     .card{                
         padding: 20px;   
     }
+    .btn-1 {
+        padding: 10px 30px 10px 30px;
+        border: 1px solid var(--white);
+        border-radius: 45px;
+    }
 }
 
 @media (min-width: 575px) {
@@ -486,8 +512,8 @@
     .pb-lg-127{
         padding-bottom: 127px;
     }
-    .pt-lg-131{
-        padding-top: 131px !important;
+    .pt-lg-100{
+        padding-top: 100px !important;
     }
     .pt-lg-141{
         padding-top: 141px !important;
@@ -520,3 +546,39 @@
 @media (max-width: 1200px) {}
 
 @media (min-width:1200px) {}
+
+
+
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .loader {
+    animation: fade-in-down 3s ease infinite;
+  }
+  
+  .max-158 {
+    width: 312px !important;
+    height: 312px !important;
+  }
+  
+  @keyframes fade-in-down {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

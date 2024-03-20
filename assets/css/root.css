@@ -1,15 +1,14 @@
 :root {
     --fs-sm: 14px;    
-    --fs-md: 16px;
+    --fs-md: 14px;
     --fs-lg: 18px;
-    --fs-xl: 20px;
+    --fs-xl: 16px;
     --fs-2xl: 21px;
-    --fs-3xl: 25px;
-    --fs-4xl: 30px;
-    --fs-5xl: 50px;
-    --fs-6xl: 70px;
+    --fs-3xl: 22px;
+    --fs-4xl: 24px;
+    --fs-5xl: 42px;
+    --fs-6xl: 44px;
     
-
 
     --line-height-19: 19px;
     --line-height-21: 21px;
@@ -20,11 +19,11 @@
     --line-height-32: 32px;
     --line-height-37: 37px;
     --line-height-40: 40px;
-    --line-height-41: 41px;
+    --line-height-41: 31px;
     --line-height-45: 45px;
     --line-height-62: 62px;
     --line-height-68: 68px;
-    --line-height-86: 86px;
+    --line-height-86: 56px;
 
     --white: white;
     --blue: #001D49;
@@ -32,6 +31,7 @@
     --card-bg: #031227;
     --sky:#009DFF;
     --outline-color:#001931;
+    --liner-color: #000A1A;
         
 
 }
@@ -120,9 +120,8 @@
 }
 
 
-
-@media (max-width:575px) {
-    :root {
+@media (min-width:575px) {
+    :root{
         --fs-sm: 14px;    
         --fs-md: 16px;
         --fs-lg: 18px;
@@ -130,10 +129,11 @@
         --fs-2xl: 21px;
         --fs-3xl: 25px;
         --fs-4xl: 30px;
-        --fs-5xl: 50px;
-        --fs-6xl: 70px;
+        --fs-5xl: 45px;
+        --fs-6xl: 60px;
+
+
         
-    
     
         --line-height-19: 19px;
         --line-height-21: 21px;
@@ -149,6 +149,35 @@
         --line-height-62: 62px;
         --line-height-68: 68px;
         --line-height-86: 86px;
-                        
-    }     
+    }
+}
+@media (min-width:992px) {
+    :root{
+        --fs-sm: 14px;    
+        --fs-md: 16px;
+        --fs-lg: 18px;
+        --fs-xl: 20px;
+        --fs-2xl: 21px;
+        --fs-3xl: 25px;
+        --fs-4xl: 30px;
+        --fs-5xl: 50px;
+        --fs-6xl: 70px;
+        
+    
+        --line-height-19: 19px;
+        --line-height-21: 21px;
+        --line-height-24: 24px;
+        --line-height-27: 27px;
+        --line-height-29: 29px;
+        --line-height-30: 30px;
+        --line-height-32: 32px;
+        --line-height-37: 37px;
+        --line-height-40: 40px;
+        --line-height-41: 41px;
+        --line-height-45: 45px;
+        --line-height-62: 62px;
+        --line-height-68: 68px;
+        --line-height-86: 86px;
+    }
+    
 }
