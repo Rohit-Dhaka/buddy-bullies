@@ -143,6 +143,7 @@
     width: 3px;                
     top: 0;
     bottom: 17%;
+    z-index: 1;
     left: 50%;
     margin-left: -3px;
 }    
@@ -321,15 +322,26 @@
 
 
 .Ellipse3{
+    background: red;
+
     right: 0;
 }
 .Ellipse1{
     
     top: -20%;
+    background: red;
+
 }
 .Ellipse2{
     right: 0;
     top: -40%;
+    background: red;
+
+}
+.Ellipse4{
+    left: 0;
+    top: -20%;
+    background: red;
 }
 
 
