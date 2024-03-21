@@ -16,17 +16,6 @@ function mobileMenu() {
 
 
 
-//------------preloder
-// document.addEventListener("DOMContentLoaded" , function (){
-//   window.addEventListener("load" , function (){
-//     setTimeout(function (){
-//       let loadingOverlay = document.getElementById("loadingOverlay");
-//      loadingOverlay.style.dispaly = "none";
-//      document.querySelector("body").classList.remove("overflow-hidden");
-
-//     }, 3000);
-//   });
-// });
 
 document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("load", function () {
@@ -34,9 +23,14 @@ document.addEventListener("DOMContentLoaded", function () {
       let loadingOverlay = document.getElementById("loadingOverlay");
       loadingOverlay.style.display = "none";
       document.querySelector("body").classList.remove("overflow_hidden");
-    }, 3000);
+    }, );
   });
 });
+
+
+
+
+
 
 
 
@@ -59,3 +53,7 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
+
+
