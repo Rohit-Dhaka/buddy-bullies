@@ -564,6 +564,9 @@
     .left-2 {
         padding: 0 0 0 90px;
     }
+    .main-timeline-2::after {                                        
+        bottom: 27%;        
+    }
 }
 @media (min-width: 768px) {
     .pb-md-146 {
