@@ -473,7 +473,7 @@
         max-width: 404px;
     }
     .mt-md-63{
-        margin-top: 63px;
+        margin-top: 63px !important;
     }
 }
 @media (min-width: 992px) {
