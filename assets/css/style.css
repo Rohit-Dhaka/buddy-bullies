@@ -133,7 +133,7 @@
 /* ------------------------------------------timeline */
 .main-timeline-2::after {
     content: "";
-    background-image: url(../img/Line3.png);
+    background-image: url(../images/png/Line3.png);
     position: absolute;
     width: 3px;                
     top: 0;
@@ -199,11 +199,11 @@
 /* ------------------------------------------timeline */
 /* ------------------------------------------accordion */
 .accordion-button::after {
-    background-image: url(../img/svg/arrowoff.svg);
+    background-image: url(../images/svg/arrowoff.svg);    
      transform: scale(.7) !important;
  }
- .accordion-button:not(.collapsed)::after {    
-     background-image: url(../img/svg/arrowon.svg);
+ .accordion-button:not(.collapsed)::after {         
+     background-image: url(../images/svg/arrowon.svg);
  }
  .accordion-button:not(.collapsed){
      background: transparent;
@@ -281,13 +281,13 @@
 }
 /* --------------------------------------preloder */
 .bg-img{
-    background-image: url(../img/hero.png);
+    background-image: url(../images/png/hero.png);
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;   
 }
 .footer-img{
-    background-image: url(../img/footer.png);
+    background-image: url(../images/png/footer.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
